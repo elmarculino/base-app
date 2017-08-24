@@ -1,0 +1,43 @@
+{
+  "name": "base-app",
+  "version": "0.0.1",
+  "description": "Basic Node/Express/Babel starter app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js --debug",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "author": "Marco Ribeiro <elmarculino@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmarculino/base-app.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "es6",
+    "babel",
+    "boilerplate"
+  ],
+  "bugs": {
+    "url": "https://github.com/elmarculino/base-app/issues"
+  },
+  "homepage": "https://github.com/elmarculino/base-app#readme"
+}
